@@ -1,11 +1,19 @@
 // complete OpenGL triangle example.
 
-#pragma comment(lib, "glew32s.lib")
-#define FREEGLUT_STATIC
-#define GLEW_STATIC
+#ifdef WIN32
+  // This is the "GL extension wrangler"
+  // Note: you will need to use the right version of glew32s.lib (32 bit vs 64 bit)
+  #define GLEW_STATIC
+  #include "GL/glew.h"
+  #pragma comment(lib, "glew32s.lib")
 
-#include "GL/glew.h"
-#include "GL/glut.h"
+  // This is the "GL utilities" framework for drawing with OpenGL
+  #define FREEGLUT_STATIC
+  //#define FREEGLUT_LIB_PRAGMAS 0
+  #include "GL/glut.h"
+#else // (osx?)
+  #include "GLUT/glut.h"
+#endif
 
 // draw a triangle once!
 class triangle
@@ -44,12 +52,14 @@ int main(int argc, char **argv)
   glutInit(&argc, argv);
   glutCreateWindow("triangle");
 
-  // On windows, we need to do this to get modern OpenGL. Thanks, Microsoft.
-  glewInit();
-  if (!glewIsSupported("GL_VERSION_2_0") )
-  {
-    return 1;
-  }
+  #ifdef WIN32
+    // On windows, we need to do this to get modern OpenGL. Thanks, Microsoft.
+    glewInit();
+    if (!glewIsSupported("GL_VERSION_2_0") )
+    {
+      return 1;
+    }
+  #endif
 
   // vertex shader copies pos to glPosition
   const char *vs = "attribute vec2 pos; void main() { gl_Position = vec4(pos, 0, 1); }";
