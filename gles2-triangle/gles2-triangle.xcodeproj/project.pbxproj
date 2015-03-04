@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81408AEC1AA7A16500F7A251 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81408AEB1AA7A16500F7A251 /* triangle.cpp */; };
 		81408AEE1AA7A21F00F7A251 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81408AED1AA7A21F00F7A251 /* GLUT.framework */; };
 		81408AF01AA7A22800F7A251 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81408AEF1AA7A22800F7A251 /* OpenGL.framework */; };
+		81D242751AA7A7C00043B808 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81D242741AA7A7C00043B808 /* triangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,9 +26,9 @@
 
 /* Begin PBXFileReference section */
 		81408ADE1AA7A11C00F7A251 /* gles2-triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gles2-triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81408AEB1AA7A16500F7A251 /* triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = triangle.cpp; path = ../../triangle.cpp; sourceTree = "<group>"; };
 		81408AED1AA7A21F00F7A251 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		81408AEF1AA7A22800F7A251 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		81D242741AA7A7C00043B808 /* triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = triangle.cpp; path = ../triangle.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +47,9 @@
 		81408AD31AA7A11C00F7A251 = {
 			isa = PBXGroup;
 			children = (
+				81D242741AA7A7C00043B808 /* triangle.cpp */,
 				81408AEF1AA7A22800F7A251 /* OpenGL.framework */,
 				81408AED1AA7A21F00F7A251 /* GLUT.framework */,
-				81408AE11AA7A11C00F7A251 /* gles2-triangle */,
 				81408ADF1AA7A11C00F7A251 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,14 +60,6 @@
 				81408ADE1AA7A11C00F7A251 /* gles2-triangle */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		81408AE11AA7A11C00F7A251 /* gles2-triangle */ = {
-			isa = PBXGroup;
-			children = (
-				81408AEB1AA7A16500F7A251 /* triangle.cpp */,
-			);
-			path = "gles2-triangle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +113,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81408AEC1AA7A16500F7A251 /* triangle.cpp in Sources */,
+				81D242751AA7A7C00043B808 /* triangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +204,7 @@
 				81408AEA1AA7A11C00F7A251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
