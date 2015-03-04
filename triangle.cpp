@@ -21,6 +21,8 @@ class triangle
 public:
   static void display()
   {
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    
     // corners of the triangle
     static const float vertices[] = {
        0.5f,  0.5f, // 2, GL_FLOAT (ie. vec2)
@@ -64,13 +66,13 @@ int main(int argc, char **argv)
   // vertex shader copies pos to glPosition
   const char *vs = "attribute vec2 pos; void main() { gl_Position = vec4(pos, 0, 1); }";
   GLuint vertex_shader = glCreateShader(GL_VERTEX_SHADER);
-  glShaderSource(vertex_shader, 1, &vs, NULL);
+  glShaderSource(vertex_shader, 1, &vs, nullptr);
   glCompileShader(vertex_shader);
 
   // fragment shader draws in red
   const char *fs = "void main() { gl_FragColor = vec4(1, 0, 0, 1); }";
   GLuint fragment_shader = glCreateShader(GL_FRAGMENT_SHADER);
-  glShaderSource(fragment_shader, 1, &fs, NULL);
+  glShaderSource(fragment_shader, 1, &fs, nullptr);
   glCompileShader(fragment_shader);
 
   // combine fragment and vertex shader

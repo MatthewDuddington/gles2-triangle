@@ -1,0 +1,219 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81408AEC1AA7A16500F7A251 /* triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81408AEB1AA7A16500F7A251 /* triangle.cpp */; };
+		81408AEE1AA7A21F00F7A251 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81408AED1AA7A21F00F7A251 /* GLUT.framework */; };
+		81408AF01AA7A22800F7A251 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81408AEF1AA7A22800F7A251 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81408ADC1AA7A11C00F7A251 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		81408ADE1AA7A11C00F7A251 /* gles2-triangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gles2-triangle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81408AEB1AA7A16500F7A251 /* triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = triangle.cpp; path = ../../triangle.cpp; sourceTree = "<group>"; };
+		81408AED1AA7A21F00F7A251 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		81408AEF1AA7A22800F7A251 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81408ADB1AA7A11C00F7A251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81408AF01AA7A22800F7A251 /* OpenGL.framework in Frameworks */,
+				81408AEE1AA7A21F00F7A251 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81408AD31AA7A11C00F7A251 = {
+			isa = PBXGroup;
+			children = (
+				81408AEF1AA7A22800F7A251 /* OpenGL.framework */,
+				81408AED1AA7A21F00F7A251 /* GLUT.framework */,
+				81408AE11AA7A11C00F7A251 /* gles2-triangle */,
+				81408ADF1AA7A11C00F7A251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81408ADF1AA7A11C00F7A251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81408ADE1AA7A11C00F7A251 /* gles2-triangle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81408AE11AA7A11C00F7A251 /* gles2-triangle */ = {
+			isa = PBXGroup;
+			children = (
+				81408AEB1AA7A16500F7A251 /* triangle.cpp */,
+			);
+			path = "gles2-triangle";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81408ADD1AA7A11C00F7A251 /* gles2-triangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81408AE81AA7A11C00F7A251 /* Build configuration list for PBXNativeTarget "gles2-triangle" */;
+			buildPhases = (
+				81408ADA1AA7A11C00F7A251 /* Sources */,
+				81408ADB1AA7A11C00F7A251 /* Frameworks */,
+				81408ADC1AA7A11C00F7A251 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "gles2-triangle";
+			productName = "gles2-triangle";
+			productReference = 81408ADE1AA7A11C00F7A251 /* gles2-triangle */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81408AD51AA7A11C00F7A251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Andy Thomason";
+			};
+			buildConfigurationList = 81408AD81AA7A11C00F7A251 /* Build configuration list for PBXProject "gles2-triangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 81408AD31AA7A11C00F7A251;
+			productRefGroup = 81408ADF1AA7A11C00F7A251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81408ADD1AA7A11C00F7A251 /* gles2-triangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81408ADA1AA7A11C00F7A251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81408AEC1AA7A16500F7A251 /* triangle.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		81408AE61AA7A11C00F7A251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		81408AE71AA7A11C00F7A251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		81408AE91AA7A11C00F7A251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		81408AEA1AA7A11C00F7A251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81408AD81AA7A11C00F7A251 /* Build configuration list for PBXProject "gles2-triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81408AE61AA7A11C00F7A251 /* Debug */,
+				81408AE71AA7A11C00F7A251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81408AE81AA7A11C00F7A251 /* Build configuration list for PBXNativeTarget "gles2-triangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81408AE91AA7A11C00F7A251 /* Debug */,
+				81408AEA1AA7A11C00F7A251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81408AD51AA7A11C00F7A251 /* Project object */;
+}
