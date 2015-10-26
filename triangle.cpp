@@ -8,9 +8,7 @@
   #pragma comment(lib, "glew32s.lib")
 
   // This is the "GL utilities" framework for drawing with OpenGL
-  #define FREEGLUT_STATIC
-  //#define FREEGLUT_LIB_PRAGMAS 0
-  #include "GL/glut.h"
+  #include "freeglut/include/GL/glut.h"
 #else // (osx?)
   #include "GLUT/glut.h"
 #endif
